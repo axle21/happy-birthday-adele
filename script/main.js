@@ -198,6 +198,11 @@ const animationTimeline = () => {
         },
         "-=2"
     )
+    .from(".quote", 1, {
+        opacity: 0,
+        y: 20,
+        ease: Power2.easeInOut,
+    }, "-=2")
     .from(".hat", 0.5, {
         x: -100,
         y: 350,
